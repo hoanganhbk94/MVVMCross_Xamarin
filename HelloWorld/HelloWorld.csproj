@@ -41,6 +41,7 @@
     <Compile Include="Interfaces\Services\IUserService.cs" />
     <Compile Include="Services\UserService.cs" />
     <Compile Include="Messenger\DataMessage.cs" />
+    <Compile Include="AppStart.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="MvvmCross.Platform">

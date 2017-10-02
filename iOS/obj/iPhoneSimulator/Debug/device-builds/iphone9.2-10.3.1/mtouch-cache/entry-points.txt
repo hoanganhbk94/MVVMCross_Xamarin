@@ -1,0 +1,13 @@
+Function=xamarin_get_block_descriptor
+	/Users/hoanganh/Desktop/github/MVVMCross_Xamarin/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone9.2-10.3.1/mtouch-cache/Link/Xamarin.iOS.dll
+Function=UIApplicationMain
+	/Users/hoanganh/Desktop/github/MVVMCross_Xamarin/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone9.2-10.3.1/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_timezone_get_data
+	/Users/hoanganh/Desktop/github/MVVMCross_Xamarin/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone9.2-10.3.1/mtouch-cache/Link/mscorlib.dll
+Function=xamarin_log
+	/Users/hoanganh/Desktop/github/MVVMCross_Xamarin/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone9.2-10.3.1/mtouch-cache/Link/mscorlib.dll
+Function=mono_pmip
+Function=xamarin_dyn_objc_msgSend
+Function=xamarin_dyn_objc_msgSendSuper
+Function=xamarin_dyn_objc_msgSend_stret
+Function=xamarin_dyn_objc_msgSendSuper_stret

@@ -1,16 +1,20 @@
 ﻿using System;
 using MvvmCross.Platform;
 using MvvmCross.Core.ViewModels;
+using MvvmCross.Platform.IoC;
 
 namespace HelloWorld
 {
 	public class App : MvxApplication
-	{
-		public App()
-		{
+    {
+        public override void Initialize()
+        {
+			CreatableTypes()
+				.EndingWith("Service")
+				.AsInterfaces()
+				.RegisterAsLazySingleton();
 			Mvx.RegisterType<ICalculation, Calculation>();
-			var appStart = new MvxAppStart<TipViewModel>();
-			Mvx.RegisterSingleton<IMvxAppStart>(appStart);
-		}
+			RegisterNavigationServiceAppStart<TipViewModel>();
+        }
 	}
 }
