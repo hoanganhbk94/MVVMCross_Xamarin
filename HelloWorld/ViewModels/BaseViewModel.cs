@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Threading.Tasks;
+using MvvmCross.Core.Navigation;
 using MvvmCross.Core.ViewModels;
 using MvvmCross.Platform;
 using MvvmCross.Plugins.Messenger;
@@ -7,17 +8,19 @@ using MvvmCross.Plugins.WebBrowser;
 
 namespace HelloWorld
 {
-	public class BaseViewModel : MvxViewModel, IDisposable
+    public class BaseViewModel : MvxViewModel, IDisposable, IMvxViewModel
 	{
 		protected IMvxMessenger Messenger;
+        protected IMvxNavigationService NavigationService;
 
 		public BaseViewModel()
 		{ 
 		}
 
-		public BaseViewModel(IMvxMessenger messenger)
+		public BaseViewModel(IMvxMessenger messenger, IMvxNavigationService navigationService)
 		{
 			this.Messenger = messenger;
+            this.NavigationService = navigationService;
 		}
 
 		protected virtual void ReloadData()
@@ -82,6 +85,5 @@ namespace HelloWorld
 		public void Dispose()
 		{
 		}
-
 	}
 }

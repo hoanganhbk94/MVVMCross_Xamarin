@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Diagnostics.Contracts;
 using System.Threading.Tasks;
+using MvvmCross.Core.Navigation;
 using MvvmCross.Core.ViewModels;
 using MvvmCross.Platform;
 using MvvmCross.Plugins.Messenger;
@@ -10,14 +11,17 @@ namespace HelloWorld
 	public class TipViewModel : BaseViewModel
 	{
 		private readonly ICalculation _calculation;
+        private readonly IMvxNavigationService _navigationService;
 
 		private double _subTotal;
 		private int _generosity;
 		private double _tip;
 
-		public TipViewModel(ICalculation calculation, IMvxMessenger messager) : base(messager)
+		public TipViewModel(ICalculation calculation, IMvxMessenger messager,
+                            IMvxNavigationService navigationService) : base(messager, navigationService)
 		{
 			_calculation = calculation;
+            _navigationService = navigationService;
 			InitializeMessager();
 		}
 
@@ -74,16 +78,31 @@ namespace HelloWorld
 			Tip = _calculation.TipAmount(SubTotal, Generosity);
 		}
 
-		public MvxCommand GoToBillCommand
+		//public MvxCommand GoToBillCommand
+		//{
+		//	get
+		//	{
+  //              return new MvxCommand(() =>
+		//		{
+  //                  double value = _tip;
+  //                  ShowViewModel<BillViewModel>(new { value });
+		//		});
+		//	}
+		//}
+
+		public MvxCommand GoToBillCommand => new MvxCommand(async () =>
 		{
-			get
-			{
-				return new MvxCommand(() =>
-				{
-					double value = _tip;
-					ShowViewModel<BillViewModel>(new { value });
-				});
-			}
+			await SendData();
+		});
+
+		public override void Prepare()
+		{
+			//Do anything before navigating to the view
+		}
+
+		public async Task SendData()
+		{
+            await _navigationService.Navigate<BillViewModel, double>(Tip);
 		}
 	}
 }

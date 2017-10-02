@@ -1,10 +1,13 @@
 ﻿<Properties StartupConfiguration="{27707106-A9E4-4F38-A558-CAA3A95E6B36}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="HelloWorld/App.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="HelloWorld/ViewModels/BillViewModel.cs">
     <Files>
-      <File FileName="HelloWorld/App.cs" Line="20" Column="4" />
-      <File FileName="HelloWorld/AppStart.cs" Line="7" Column="62" />
+      <File FileName="HelloWorld/App.cs" Line="16" Column="20" />
+      <File FileName="HelloWorld/AppStart.cs" Line="18" Column="31" />
       <File FileName="iOS/Setup.cs" Line="17" Column="18" />
       <File FileName="iOS/AppDelegate.cs" Line="35" Column="20" />
+      <File FileName="HelloWorld/ViewModels/TipViewModel.cs" Line="95" Column="81" />
+      <File FileName="HelloWorld/ViewModels/BaseViewModel.cs" Line="27" Column="4" />
+      <File FileName="HelloWorld/ViewModels/BillViewModel.cs" Line="12" Column="50" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />

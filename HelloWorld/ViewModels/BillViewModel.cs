@@ -1,19 +1,25 @@
 ﻿using System;
+using System.Threading.Tasks;
+using MvvmCross.Core.Navigation;
 using MvvmCross.Core.ViewModels;
 using MvvmCross.Platform;
 using MvvmCross.Plugins.Messenger;
 
 namespace HelloWorld
 {
-	public class BillViewModel : BaseViewModel
+    public class BillViewModel : BaseViewModel, IMvxViewModel<double, double>
 	{
-		private double _value;
-		private IDialogService _dialogService;
+		private readonly IDialogService _dialogService;
+        private readonly IMvxNavigationService _navigationService;
+
+        private double _value;
 		private UserModel[] _arrUsers = new UserModel[5];
 
-		public BillViewModel(IDialogService dialogService, IMvxMessenger messenger) : base(messenger)
+		public BillViewModel(IDialogService dialogService, IMvxMessenger messenger, 
+                             IMvxNavigationService navigationService) : base(messenger, navigationService)
 		{
 			_dialogService = dialogService;
+            _navigationService = navigationService;
 		}
 
 		public void Init(double value)
@@ -26,7 +32,7 @@ namespace HelloWorld
 			base.Start();
 		}
 
-		public double Value
+        public double Value
 		{ 
 			get { return _value; }
 			set
@@ -89,5 +95,16 @@ namespace HelloWorld
 			}
 		}
 
-	}
+        public TaskCompletionSource<object> CloseCompletionSource { get; set; }
+
+        public void Prepare(double parameter)
+        {
+            this.Value = parameter;
+        }
+
+		public async Task SomeMethodToClose()
+		{
+            await _navigationService.Close(this, this.Value);
+		}
+    }
 }
