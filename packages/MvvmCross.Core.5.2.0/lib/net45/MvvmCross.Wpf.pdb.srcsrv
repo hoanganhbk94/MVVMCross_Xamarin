@@ -1,0 +1,31 @@
+SRCSRV: ini ------------------------------------------------
+VERSION=2
+SRCSRV: variables ------------------------------------------
+RAWURL=https://raw.github.com/mvvmcross/mvvmcross/e038540e081c9b5ea0ee21d7723ecefed3feb302/%var2%
+SRCSRVVERCTRL=https
+SRCSRVTRG=%RAWURL%
+SRCSRV: source files ---------------------------------------
+C:\projects\mvvmcross\MvvmCross\Windows\Wpf\Commands\MvxEventToCommand.cs*MvvmCross/Windows/Wpf/Commands/MvxEventToCommand.cs
+C:\projects\mvvmcross\MvvmCross\Windows\Wpf\Commands\MvxSelectionChangedEventToCommand.cs*MvvmCross/Windows/Wpf/Commands/MvxSelectionChangedEventToCommand.cs
+C:\projects\mvvmcross\MvvmCross\Windows\Wpf\Commands\MvxSimpleSelectionChangedEventArgs.cs*MvvmCross/Windows/Wpf/Commands/MvxSimpleSelectionChangedEventArgs.cs
+C:\projects\mvvmcross\MvvmCross\Windows\Wpf\Commands\MvxWithArgsEventToCommand.cs*MvvmCross/Windows/Wpf/Commands/MvxWithArgsEventToCommand.cs
+C:\projects\mvvmcross\MvvmCross\Windows\Wpf\Views\IMvxWindow.cs*MvvmCross/Windows/Wpf/Views/IMvxWindow.cs
+C:\projects\mvvmcross\MvvmCross\Windows\Wpf\Views\MvxWindow.cs*MvvmCross/Windows/Wpf/Views/MvxWindow.cs
+C:\projects\mvvmcross\MvvmCross\Windows\Wpf\Views\Presenters\Attributes\MvxContentPresentationAttribute.cs*MvvmCross/Windows/Wpf/Views/Presenters/Attributes/MvxContentPresentationAttribute.cs
+C:\projects\mvvmcross\MvvmCross\Windows\Wpf\Views\Presenters\Attributes\MvxWindowPresentationAttribute.cs*MvvmCross/Windows/Wpf/Views/Presenters/Attributes/MvxWindowPresentationAttribute.cs
+C:\projects\mvvmcross\MvvmCross\Windows\Wpf\Views\Presenters\IMvxWpfViewPresenter.cs*MvvmCross/Windows/Wpf/Views/Presenters/IMvxWpfViewPresenter.cs
+C:\projects\mvvmcross\MvvmCross\Windows\Wpf\Views\IMvxWpfView.cs*MvvmCross/Windows/Wpf/Views/IMvxWpfView.cs
+C:\projects\mvvmcross\MvvmCross\Windows\Wpf\Converters\MvxNativeValueConverter.cs*MvvmCross/Windows/Wpf/Converters/MvxNativeValueConverter.cs
+C:\projects\mvvmcross\MvvmCross\Windows\Wpf\Platform\MvxWpfSetup.cs*MvvmCross/Windows/Wpf/Platform/MvxWpfSetup.cs
+C:\projects\mvvmcross\MvvmCross\Windows\Wpf\Platform\MvxTraceTrace.cs*MvvmCross/Windows/Wpf/Platform/MvxTraceTrace.cs
+C:\projects\mvvmcross\MvvmCross\Windows\Wpf\Views\IMvxWpfViewLoader.cs*MvvmCross/Windows/Wpf/Views/IMvxWpfViewLoader.cs
+C:\projects\mvvmcross\MvvmCross\Windows\Wpf\Views\IMvxWpfViewsContainer.cs*MvvmCross/Windows/Wpf/Views/IMvxWpfViewsContainer.cs
+C:\projects\mvvmcross\MvvmCross\Windows\Wpf\Views\Presenters\MvxWpfViewPresenter.cs*MvvmCross/Windows/Wpf/Views/Presenters/MvxWpfViewPresenter.cs
+C:\projects\mvvmcross\MvvmCross\Windows\Wpf\Views\Presenters\MvxSimpleWpfViewPresenter.cs*MvvmCross/Windows/Wpf/Views/Presenters/MvxSimpleWpfViewPresenter.cs
+C:\projects\mvvmcross\MvvmCross\Windows\Wpf\Views\MvxWpfUIThreadDispatcher.cs*MvvmCross/Windows/Wpf/Views/MvxWpfUIThreadDispatcher.cs
+C:\projects\mvvmcross\MvvmCross\Windows\Wpf\Views\MvxWpfView.cs*MvvmCross/Windows/Wpf/Views/MvxWpfView.cs
+C:\projects\mvvmcross\MvvmCross\Windows\Wpf\Views\Presenters\MvxBaseWpfViewPresenter.cs*MvvmCross/Windows/Wpf/Views/Presenters/MvxBaseWpfViewPresenter.cs
+C:\projects\mvvmcross\AssemblyInfo.cs*AssemblyInfo.cs
+C:\projects\mvvmcross\MvvmCross\Windows\Wpf\Views\MvxWpfViewsContainer.cs*MvvmCross/Windows/Wpf/Views/MvxWpfViewsContainer.cs
+C:\projects\mvvmcross\MvvmCross\Windows\Wpf\Views\MvxWpfViewDispatcher.cs*MvvmCross/Windows/Wpf/Views/MvxWpfViewDispatcher.cs
+SRCSRV: end ------------------------------------------------

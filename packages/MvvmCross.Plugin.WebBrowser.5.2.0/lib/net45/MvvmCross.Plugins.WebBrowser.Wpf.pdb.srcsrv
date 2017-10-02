@@ -1,0 +1,11 @@
+SRCSRV: ini ------------------------------------------------
+VERSION=2
+SRCSRV: variables ------------------------------------------
+RAWURL=https://raw.github.com/mvvmcross/mvvmcross/e038540e081c9b5ea0ee21d7723ecefed3feb302/%var2%
+SRCSRVVERCTRL=https
+SRCSRVTRG=%RAWURL%
+SRCSRV: source files ---------------------------------------
+C:\projects\mvvmcross\MvvmCross-Plugins\WebBrowser\MvvmCross.Plugins.WebBrowser.Wpf\MvxWebBrowserTask.cs*MvvmCross-Plugins/WebBrowser/MvvmCross.Plugins.WebBrowser.Wpf/MvxWebBrowserTask.cs
+C:\projects\mvvmcross\MvvmCross-Plugins\WebBrowser\MvvmCross.Plugins.WebBrowser.Wpf\Plugin.cs*MvvmCross-Plugins/WebBrowser/MvvmCross.Plugins.WebBrowser.Wpf/Plugin.cs
+C:\projects\mvvmcross\AssemblyInfo.cs*AssemblyInfo.cs
+SRCSRV: end ------------------------------------------------

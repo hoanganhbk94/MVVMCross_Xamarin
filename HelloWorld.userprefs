@@ -1,0 +1,22 @@
+﻿<Properties StartupConfiguration="{27707106-A9E4-4F38-A558-CAA3A95E6B36}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="iOS/Views/BaseView.cs">
+    <Files>
+      <File FileName="HelloWorld/App.cs" Line="15" Column="3" />
+      <File FileName="HelloWorld/ViewModels/TipViewModel.cs" Line="21" Column="25" />
+      <File FileName="HelloWorld/ViewModels/BillViewModel.cs" Line="29" Column="22" />
+      <File FileName="HelloWorld/ViewModels/BaseViewModel.cs" Line="81" Column="9" />
+      <File FileName="iOS/Views/BaseView.cs" Line="35" Column="1" />
+      <File FileName="iOS/Views/BillView.cs" Line="44" Column="13" />
+      <File FileName="iOS/Views/TipView.cs" Line="28" Column="13" />
+      <File FileName="iOS/AppDelegate.cs" Line="37" Column="14" />
+      <File FileName="iOS/Setup.cs" Line="19" Column="9" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.HelloWorld.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.461668D5-E07D-4BAB-B7FE-0EF997D90C16" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MultiItemStartupConfigurations />
+</Properties>

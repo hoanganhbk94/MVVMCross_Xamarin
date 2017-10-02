@@ -1,0 +1,14 @@
+/Users/anh/Desktop/Xamarin/HelloWorld/HelloWorld/obj/Debug/.NETPortable,Version=v4.5,Profile=Profile259.AssemblyAttribute.cs
+/Users/anh/Desktop/Xamarin/HelloWorld/HelloWorld/bin/Debug/HelloWorld.dll.mdb
+/Users/anh/Desktop/Xamarin/HelloWorld/HelloWorld/bin/Debug/HelloWorld.dll
+/Users/anh/Desktop/Xamarin/HelloWorld/HelloWorld/obj/Debug/HelloWorld.dll
+/Users/anh/Desktop/Xamarin/HelloWorld/HelloWorld/obj/Debug/HelloWorld.dll.mdb
+/Users/anh/Desktop/Xamarin/HelloWorld/HelloWorld/bin/Debug/MvvmCross.Platform.dll
+/Users/anh/Desktop/Xamarin/HelloWorld/HelloWorld/bin/Debug/MvvmCross.Core.dll
+/Users/anh/Desktop/Xamarin/HelloWorld/HelloWorld/bin/Debug/MvvmCross.Binding.dll
+/Users/anh/Desktop/Xamarin/HelloWorld/HelloWorld/bin/Debug/MvvmCross.Localization.dll
+/Users/anh/Desktop/Xamarin/HelloWorld/HelloWorld/bin/Debug/MvvmCross.Plugins.WebBrowser.dll
+/Users/anh/Desktop/Xamarin/HelloWorld/HelloWorld/bin/Debug/MvvmCross.Plugins.Messenger.dll
+/Users/anh/Desktop/Xamarin/HelloWorld/HelloWorld/bin/Debug/HelloWorld.pdb
+/Users/anh/Desktop/Xamarin/HelloWorld/HelloWorld/obj/Debug/HelloWorld.pdb
+/Users/anh/Desktop/Xamarin/HelloWorld/HelloWorld/bin/Debug/MvvmCross.Plugins.ResxLocalization.dll

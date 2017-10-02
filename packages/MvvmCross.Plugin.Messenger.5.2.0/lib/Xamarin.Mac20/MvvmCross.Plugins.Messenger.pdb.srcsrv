@@ -1,0 +1,25 @@
+SRCSRV: ini ------------------------------------------------
+VERSION=2
+SRCSRV: variables ------------------------------------------
+RAWURL=https://raw.github.com/mvvmcross/mvvmcross/e038540e081c9b5ea0ee21d7723ecefed3feb302/%var2%
+SRCSRVVERCTRL=https
+SRCSRVTRG=%RAWURL%
+SRCSRV: source files ---------------------------------------
+C:\projects\mvvmcross\MvvmCross-Plugins\Messenger\MvvmCross.Plugins.Messenger\MvxReference.cs*MvvmCross-Plugins/Messenger/MvvmCross.Plugins.Messenger/MvxReference.cs
+C:\projects\mvvmcross\MvvmCross-Plugins\Messenger\MvvmCross.Plugins.Messenger\MvxSubscriberChangeMessage.cs*MvvmCross-Plugins/Messenger/MvvmCross.Plugins.Messenger/MvxSubscriberChangeMessage.cs
+C:\projects\mvvmcross\MvvmCross-Plugins\Messenger\MvvmCross.Plugins.Messenger\ThreadRunners\IMvxActionRunner.cs*MvvmCross-Plugins/Messenger/MvvmCross.Plugins.Messenger/ThreadRunners/IMvxActionRunner.cs
+C:\projects\mvvmcross\MvvmCross-Plugins\Messenger\MvvmCross.Plugins.Messenger\MvxMessage.cs*MvvmCross-Plugins/Messenger/MvvmCross.Plugins.Messenger/MvxMessage.cs
+C:\projects\mvvmcross\MvvmCross-Plugins\Messenger\MvvmCross.Plugins.Messenger\IMvxMessenger.cs*MvvmCross-Plugins/Messenger/MvvmCross.Plugins.Messenger/IMvxMessenger.cs
+C:\projects\mvvmcross\MvvmCross-Plugins\Messenger\MvvmCross.Plugins.Messenger\ThreadRunners\MvxThreadpoolActionRunner.cs*MvvmCross-Plugins/Messenger/MvvmCross.Plugins.Messenger/ThreadRunners/MvxThreadpoolActionRunner.cs
+C:\projects\mvvmcross\MvvmCross-Plugins\Messenger\MvvmCross.Plugins.Messenger\ThreadRunners\MvxMainThreadActionRunner.cs*MvvmCross-Plugins/Messenger/MvvmCross.Plugins.Messenger/ThreadRunners/MvxMainThreadActionRunner.cs
+C:\projects\mvvmcross\MvvmCross-Plugins\Messenger\MvvmCross.Plugins.Messenger\MvxMessengerHub.cs*MvvmCross-Plugins/Messenger/MvvmCross.Plugins.Messenger/MvxMessengerHub.cs
+C:\projects\mvvmcross\MvvmCross-Plugins\Messenger\MvvmCross.Plugins.Messenger\ThreadRunners\MvxSimpleActionRunner.cs*MvvmCross-Plugins/Messenger/MvvmCross.Plugins.Messenger/ThreadRunners/MvxSimpleActionRunner.cs
+C:\projects\mvvmcross\MvvmCross-Plugins\Messenger\MvvmCross.Plugins.Messenger\PluginLoader.cs*MvvmCross-Plugins/Messenger/MvvmCross.Plugins.Messenger/PluginLoader.cs
+C:\projects\mvvmcross\AssemblyInfo.cs*AssemblyInfo.cs
+C:\projects\mvvmcross\MvvmCross-Plugins\Messenger\MvvmCross.Plugins.Messenger\Subscriptions\BaseSubscription.cs*MvvmCross-Plugins/Messenger/MvvmCross.Plugins.Messenger/Subscriptions/BaseSubscription.cs
+C:\projects\mvvmcross\MvvmCross-Plugins\Messenger\MvvmCross.Plugins.Messenger\Subscriptions\TypedSubscription.cs*MvvmCross-Plugins/Messenger/MvvmCross.Plugins.Messenger/Subscriptions/TypedSubscription.cs
+C:\projects\mvvmcross\MvvmCross-Plugins\Messenger\MvvmCross.Plugins.Messenger\Subscriptions\StrongSubscription.cs*MvvmCross-Plugins/Messenger/MvvmCross.Plugins.Messenger/Subscriptions/StrongSubscription.cs
+C:\projects\mvvmcross\MvvmCross-Plugins\Messenger\MvvmCross.Plugins.Messenger\Subscriptions\WeakSubscription.cs*MvvmCross-Plugins/Messenger/MvvmCross.Plugins.Messenger/Subscriptions/WeakSubscription.cs
+C:\projects\mvvmcross\MvvmCross-Plugins\Messenger\MvvmCross.Plugins.Messenger\MvxSubscriptionToken.cs*MvvmCross-Plugins/Messenger/MvvmCross.Plugins.Messenger/MvxSubscriptionToken.cs
+C:\projects\mvvmcross\MvvmCross-Plugins\All\MvvmCross.Plugins.All\Preserve.cs*MvvmCross-Plugins/All/MvvmCross.Plugins.All/Preserve.cs
+SRCSRV: end ------------------------------------------------
