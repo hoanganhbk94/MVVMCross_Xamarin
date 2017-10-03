@@ -10,14 +10,14 @@ namespace HelloWorld
 {
 	public class TipViewModel : BaseViewModel
 	{
-		private readonly ICalculation _calculation;
+		private readonly ICalculationService _calculation;
         private readonly IMvxNavigationService _navigationService;
 
 		private double _subTotal;
 		private int _generosity;
 		private double _tip;
 
-		public TipViewModel(ICalculation calculation, IMvxMessenger messager,
+		public TipViewModel(ICalculationService calculation, IMvxMessenger messager,
                             IMvxNavigationService navigationService) : base(messager, navigationService)
 		{
 			_calculation = calculation;

@@ -13,7 +13,6 @@ namespace HelloWorld
 				.EndingWith("Service")
 				.AsInterfaces()
 				.RegisterAsLazySingleton();
-			Mvx.RegisterType<ICalculation, Calculation>();
 			RegisterNavigationServiceAppStart<TipViewModel>();
         }
 	}
