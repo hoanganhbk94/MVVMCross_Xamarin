@@ -10,16 +10,14 @@ namespace HelloWorld
 {
     public class BaseViewModel : MvxViewModel, IDisposable, IMvxViewModel
 	{
-		protected IMvxMessenger Messenger;
         protected IMvxNavigationService NavigationService;
 
 		public BaseViewModel()
 		{ 
 		}
 
-		public BaseViewModel(IMvxMessenger messenger, IMvxNavigationService navigationService)
+		public BaseViewModel(IMvxNavigationService navigationService)
 		{
-			this.Messenger = messenger;
             this.NavigationService = navigationService;
 		}
 

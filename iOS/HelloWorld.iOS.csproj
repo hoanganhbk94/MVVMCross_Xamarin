@@ -136,6 +136,7 @@
     <InterfaceDefinition Include="Views\TipView.xib" />
     <InterfaceDefinition Include="Views\BillView.xib" />
     <InterfaceDefinition Include="Views\UserTableViewCell.xib" />
+    <InterfaceDefinition Include="Views\LoginView.xib" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Info.plist" />
@@ -166,6 +167,10 @@
     <Compile Include="DataSource\UserTableViewDataSource.cs" />
     <Compile Include="Bootstrap\WebBrowserPluginBootstrap.cs" />
     <Compile Include="Bootstrap\MessengerPluginBootstrap.cs" />
+    <Compile Include="Views\LoginView.cs" />
+    <Compile Include="Views\LoginView.designer.cs">
+      <DependentUpon>LoginView.cs</DependentUpon>
+    </Compile>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
 </Project>

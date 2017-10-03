@@ -2,6 +2,7 @@
 using MvvmCross.Platform;
 using MvvmCross.Core.ViewModels;
 using MvvmCross.Platform.IoC;
+using HelloWorld.ViewModels;
 
 namespace HelloWorld
 {
@@ -13,7 +14,13 @@ namespace HelloWorld
 				.EndingWith("Service")
 				.AsInterfaces()
 				.RegisterAsLazySingleton();
-			RegisterNavigationServiceAppStart<TipViewModel>();
+
+            CreatableTypes()
+                .EndingWith("Repository")
+                .AsInterfaces()
+                .RegisterAsLazySingleton();
+
+			RegisterNavigationServiceAppStart<LoginViewModel>();
         }
 	}
 }

@@ -1,22 +1,16 @@
 ﻿<Properties StartupConfiguration="{27707106-A9E4-4F38-A558-CAA3A95E6B36}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="iOS/Setup.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="HelloWorld/App.cs">
     <Files>
-      <File FileName="HelloWorld/ViewModels/BaseViewModel.cs" Line="38" Column="31" />
-      <File FileName="HelloWorld/ViewModels/BillViewModel.cs" Line="26" Column="4" />
-      <File FileName="HelloWorld/ViewModels/TipViewModel.cs" Line="35" Column="4" />
-      <File FileName="HelloWorld/Converters/CurrencyValueConverter.cs" Line="9" Column="42" />
-      <File FileName="iOS/Views/BillView.cs" Line="32" Column="18" />
-      <File FileName="iOS/Views/BaseView.cs" Line="1" Column="1" />
-      <File FileName="HelloWorld/Properties/AssemblyInfo.cs" Line="23" Column="30" />
-      <File FileName="iOS/Setup.cs" Line="41" Column="31" />
+      <File FileName="HelloWorld/Interfaces/Services/IUserService.cs" Line="9" Column="1" />
+      <File FileName="HelloWorld/AppStart.cs" Line="19" Column="30" />
+      <File FileName="HelloWorld/App.cs" Line="24" Column="10" />
+      <File FileName="iOS/AppDelegate.cs" Line="28" Column="13" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.ItemProperties.HelloWorld.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.003FE8B7-36AF-4256-A071-BEC6DF42D447" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore>
-      <Breakpoint file="/Users/anh/Desktop/github/Xamarin/MVVMCross_Xamarin/HelloWorld/Converters/CurrencyValueConverter.cs" relfile="HelloWorld/Converters/CurrencyValueConverter.cs" line="11" column="1" />
-    </BreakpointStore>
+    <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MultiItemStartupConfigurations />

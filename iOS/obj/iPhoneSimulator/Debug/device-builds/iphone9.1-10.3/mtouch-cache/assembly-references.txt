@@ -30,6 +30,6 @@
 /Users/anh/Desktop/github/Xamarin/MVVMCross_Xamarin/packages/MvvmCross.Binding.5.2.0/lib/Xamarin.iOS10/MvvmCross.Localization.dll
 /Users/anh/Desktop/github/Xamarin/MVVMCross_Xamarin/packages/MvvmCross.Binding.5.2.0/lib/Xamarin.iOS10/MvvmCross.Binding.iOS.dll
 /Users/anh/Desktop/github/Xamarin/MVVMCross_Xamarin/HelloWorld/bin/Debug/HelloWorld.dll
-/Users/anh/Desktop/github/Xamarin/MVVMCross_Xamarin/packages/MvvmCross.Plugin.Messenger.5.2.0/lib/Xamarin.iOS10/MvvmCross.Plugins.Messenger.dll
 /Users/anh/Desktop/github/Xamarin/MVVMCross_Xamarin/packages/MvvmCross.Plugin.WebBrowser.5.2.0/lib/Xamarin.iOS10/MvvmCross.Plugins.WebBrowser.dll
+/Users/anh/Desktop/github/Xamarin/MVVMCross_Xamarin/packages/MvvmCross.Plugin.Messenger.5.2.0/lib/Xamarin.iOS10/MvvmCross.Plugins.Messenger.dll
 /Users/anh/Desktop/github/Xamarin/MVVMCross_Xamarin/packages/MvvmCross.Plugin.WebBrowser.5.2.0/lib/Xamarin.iOS10/MvvmCross.Plugins.WebBrowser.iOS.dll

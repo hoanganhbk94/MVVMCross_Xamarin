@@ -10,16 +10,13 @@ namespace HelloWorld
     public class BillViewModel : BaseViewModel, IMvxViewModel<double, double>
 	{
 		private readonly IDialogService _dialogService;
-        private readonly IMvxNavigationService _navigationService;
 
         private double _value;
 		private UserModel[] _arrUsers = new UserModel[5];
 
-		public BillViewModel(IDialogService dialogService, IMvxMessenger messenger, 
-                             IMvxNavigationService navigationService) : base(messenger, navigationService)
+		public BillViewModel(IDialogService dialogService, IMvxNavigationService navigationService) : base(navigationService)
 		{
 			_dialogService = dialogService;
-            _navigationService = navigationService;
 		}
 
 		public void Init(double value)
@@ -92,7 +89,7 @@ namespace HelloWorld
 
 		public async Task CloseWithResult()
 		{
-            await _navigationService.Close(this, this.Value + 2.0);
+            await NavigationService.Close(this, this.Value + 2.0);
 		}
 
         public TaskCompletionSource<object> CloseCompletionSource { get; set; }

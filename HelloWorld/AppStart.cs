@@ -1,4 +1,5 @@
 ﻿using System;
+using HelloWorld.ViewModels;
 using MvvmCross.Core.Navigation;
 using MvvmCross.Core.ViewModels;
 
@@ -15,7 +16,7 @@ namespace HelloWorld
 
         public void Start(object hint = null)
         {
-            _navigationService.Navigate<TipViewModel>();
+            _navigationService.Navigate<LoginViewModel>();
         }
     }
 }

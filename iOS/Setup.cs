@@ -43,6 +43,5 @@ namespace HelloWorld.iOS
 			base.FillValueConverters(registry);
             registry.AddOrOverwrite("CurrencyValue", new CurrencyValueConverter());
 		}
-
 	}
 }

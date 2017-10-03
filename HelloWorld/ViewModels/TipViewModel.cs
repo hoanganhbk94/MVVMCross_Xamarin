@@ -11,24 +11,20 @@ namespace HelloWorld
 	public class TipViewModel : BaseViewModel
 	{
 		private readonly ICalculationService _calculation;
-        private readonly IMvxNavigationService _navigationService;
 
 		private double _subTotal;
 		private int _generosity;
 		private double _tip;
 
-		public TipViewModel(ICalculationService calculation, IMvxMessenger messager,
-                            IMvxNavigationService navigationService) : base(messager, navigationService)
+		public TipViewModel(ICalculationService calculation, IMvxNavigationService navigationService) : base(navigationService)
 		{
 			_calculation = calculation;
-            _navigationService = navigationService;
 			InitializeMessager();
 		}
 
 		private void InitializeMessager()
 		{
 			Mvx.Trace("Subscribe data");
-			Messenger.Subscribe<DataMessage>(async message => await ReloadDataAsync());
 		}
 
 		public override async void Start()
@@ -102,7 +98,7 @@ namespace HelloWorld
 
 		public async Task SendData()
 		{
-            var result = await _navigationService.Navigate<BillViewModel, double, double>(Tip);
+            var result = await NavigationService.Navigate<BillViewModel, double, double>(Tip);
 
             Mvx.Trace("Result return: " + result);
 			//Do something with the result MyReturnObject that you get back
