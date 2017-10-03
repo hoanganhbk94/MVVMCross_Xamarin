@@ -102,7 +102,10 @@ namespace HelloWorld
 
 		public async Task SendData()
 		{
-            await _navigationService.Navigate<BillViewModel, double>(Tip);
+            var result = await _navigationService.Navigate<BillViewModel, double, double>(Tip);
+
+            Mvx.Trace("Result return: " + result);
+			//Do something with the result MyReturnObject that you get back
 		}
 	}
 }

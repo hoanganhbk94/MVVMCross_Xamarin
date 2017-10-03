@@ -82,29 +82,26 @@ namespace HelloWorld
 			}
 		}
 
-		public MvxCommand ReturnValueCommand
-		{ 
-			get
-			{
-				return new MvxCommand(() =>
-				{
-					Mvx.Trace("Publish data");
-					Messenger.Publish(new DataMessage(this, Value));
-					Close(this);
-				});
-			}
-		}
-
-        public TaskCompletionSource<object> CloseCompletionSource { get; set; }
+		public MvxCommand ReturnValueCommand => new MvxCommand(async () => await CloseWithResult());
+			
 
         public void Prepare(double parameter)
         {
             this.Value = parameter;
         }
 
-		public async Task SomeMethodToClose()
+		public async Task CloseWithResult()
 		{
-            await _navigationService.Close(this, this.Value);
+            await _navigationService.Close(this, this.Value + 2.0);
 		}
+
+        public TaskCompletionSource<object> CloseCompletionSource { get; set; }
+
+        public override void ViewDestroy()
+        {
+			if (CloseCompletionSource != null && !CloseCompletionSource.Task.IsCompleted && !CloseCompletionSource.Task.IsFaulted)
+				CloseCompletionSource?.TrySetCanceled();
+			base.ViewDestroy();
+        }
     }
 }
