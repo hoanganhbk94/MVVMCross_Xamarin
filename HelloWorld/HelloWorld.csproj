@@ -42,6 +42,7 @@
     <Compile Include="Services\UserService.cs" />
     <Compile Include="Messenger\DataMessage.cs" />
     <Compile Include="AppStart.cs" />
+    <Compile Include="Converters\CurrencyValueConverter.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="MvvmCross.Platform">

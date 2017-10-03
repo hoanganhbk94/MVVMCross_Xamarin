@@ -35,7 +35,7 @@ namespace HelloWorld.iOS
 
 			var set = this.CreateBindingSet<BillView, BillViewModel>();
 			set.Bind(BackButton).To(vm => vm.BackCommand);
-			set.Bind(RandomLabel).To(vm => vm.Value);
+            set.Bind(RandomLabel).To(vm => vm.Value).WithConversion("CurrencyValue");
 			set.Bind(ProcessButton).To(vm => vm.ReturnValueCommand);
 			set.Bind(_userTableViewDataSource).To(vm => vm.arrUsers);
 			set.Bind(_userTableViewDataSource)
