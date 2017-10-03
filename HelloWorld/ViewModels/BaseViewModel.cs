@@ -10,15 +10,17 @@ namespace HelloWorld
 {
     public class BaseViewModel : MvxViewModel, IDisposable, IMvxViewModel
 	{
-        protected IMvxNavigationService NavigationService;
+        protected readonly IMvxNavigationService NavigationService;
+        protected readonly IDialogService DialogService;
 
-		public BaseViewModel()
-		{ 
-		}
-
-		public BaseViewModel(IMvxNavigationService navigationService)
+        public BaseViewModel(IMvxNavigationService navigationService)
 		{
             this.NavigationService = navigationService;
+		}
+
+        public BaseViewModel(IMvxNavigationService navigationService, IDialogService dialogService) : this(navigationService)
+		{
+            this.DialogService = dialogService;
 		}
 
 		protected virtual void ReloadData()

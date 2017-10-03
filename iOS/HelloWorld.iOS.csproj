@@ -130,6 +130,7 @@
     <Folder Include="DataSource\" />
     <Folder Include="Presenter\" />
     <Folder Include="Services\" />
+    <Folder Include="CustomViews\" />
   </ItemGroup>
   <ItemGroup>
     <InterfaceDefinition Include="LaunchScreen.storyboard" />

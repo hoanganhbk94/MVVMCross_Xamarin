@@ -7,7 +7,8 @@ namespace HelloWorld.Repositorys
     {
         public bool LoginWithUserName(string userName, string password)
         {
-            if (userName.Equals("admin") && password.Equals("admin"))
+            if (!string.IsNullOrEmpty(userName) && userName.Equals("admin") && 
+                !string.IsNullOrEmpty(password) && password.Equals("admin"))
             {
                 return true;
             }

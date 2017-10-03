@@ -16,6 +16,8 @@ namespace HelloWorld.iOS
 			base.ViewDidLoad();
 
 			NavigationController.NavigationBarHidden = true;
+            CustomViews();
+
 			CreateBindings();
 		}
 
@@ -25,10 +27,14 @@ namespace HelloWorld.iOS
 			// Release any cached data, images, etc that aren't in use.
 		}
 
+        public virtual void CustomViews()
+        {
+            
+        }
+
 		public virtual void CreateBindings()
 		{
 		}
-			
 	}
 }
 

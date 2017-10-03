@@ -14,13 +14,30 @@ namespace HelloWorld.iOS.Views
         public override void ViewDidLoad()
         {
             base.ViewDidLoad();
-            // Perform any additional setup after loading the view, typically from a nib.
         }
 
         public override void DidReceiveMemoryWarning()
         {
             base.DidReceiveMemoryWarning();
             // Release any cached data, images, etc that aren't in use.
+        }
+
+        public override void CustomViews()
+        {
+            base.CustomViews();
+
+			// Dismiss keyboard
+			this.UserNameTextField.ShouldReturn += (textField) =>
+			{
+				((UITextField)textField).ResignFirstResponder();
+				return true;
+			};
+
+			this.PasswordTextField.ShouldReturn += (textField) =>
+			{
+				((UITextField)textField).ResignFirstResponder();
+				return true;
+			};
         }
 
         public override void CreateBindings()
