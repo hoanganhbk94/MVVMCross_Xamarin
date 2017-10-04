@@ -9,7 +9,7 @@ using MvvmCross.Plugins.WebBrowser;
 namespace HelloWorld
 {
     public class BaseViewModel : MvxViewModel, IDisposable, IMvxViewModel
-	{
+    {
         protected readonly IMvxNavigationService NavigationService;
         protected readonly IDialogService DialogService;
 
@@ -26,76 +26,76 @@ namespace HelloWorld
         }
 
         public BaseViewModel(IMvxNavigationService navigationService)
-		{
+        {
             this.NavigationService = navigationService;
-		}
+        }
 
         public BaseViewModel(IMvxNavigationService navigationService, IDialogService dialogService) : this(navigationService)
-		{
+        {
             this.DialogService = dialogService;
-		}
+        }
 
-		protected virtual void ReloadData()
-		{
-			try
-			{
-				InitializeSync();
-			}
-			catch (Exception ex)
-			{
-				Mvx.Error(ex.Message);
-			}
-		}
+        protected virtual void ReloadData()
+        {
+            try
+            {
+                InitializeSync();
+            }
+            catch (Exception ex)
+            {
+                Mvx.Error(ex.Message);
+            }
+        }
 
-		protected virtual void InitializeSync()
-		{ 
-			
-		}
+        protected virtual void InitializeSync()
+        {
 
-		protected async Task ReloadDataAsync()
-		{ 
-			try
-			{
-				Mvx.Trace("ReloadDataAsync");
-				await InitializeAsync();
-			}
-			catch (Exception ex)
-			{
-				Mvx.Error(ex.Message);
-			}
-		}
+        }
 
-		protected virtual Task InitializeAsync()
-		{
-			return Task.FromResult(0);
-		}
+        protected async Task ReloadDataAsync()
+        {
+            try
+            {
+                Mvx.Trace("ReloadDataAsync");
+                await InitializeAsync();
+            }
+            catch (Exception ex)
+            {
+                Mvx.Error(ex.Message);
+            }
+        }
 
-		public IMvxCommand BackCommand
-		{ 
-			get
-			{ 
-				return new MvxCommand(() => Close(this));
-			}
-		}
+        protected virtual Task InitializeAsync()
+        {
+            return Task.FromResult(0);
+        }
 
-		protected void ShowWebPage(string url)
-		{
-			if (!string.IsNullOrEmpty(url))
-			{
-				var task = Mvx.Resolve<IMvxWebBrowserTask>();
-				try
-				{
-					task.ShowWebPage(url);
-				}
-				catch (Exception exception)
-				{
-					Mvx.Trace(exception.Message);
-				}
-			}
-		}
+        public IMvxCommand BackCommand
+        {
+            get
+            {
+                return new MvxCommand(() => NavigationService.Close(this));
+            }
+        }
 
-		public void Dispose()
-		{
-		}
-	}
+        protected void ShowWebPage(string url)
+        {
+            if (!string.IsNullOrEmpty(url))
+            {
+                var task = Mvx.Resolve<IMvxWebBrowserTask>();
+                try
+                {
+                    task.ShowWebPage(url);
+                }
+                catch (Exception exception)
+                {
+                    Mvx.Trace(exception.Message);
+                }
+            }
+        }
+
+        public void Dispose()
+        {
+        }
+    }
 }

@@ -31,6 +31,8 @@ namespace HelloWorld.iOS
 			set.Bind(SubTotalTextField).To(vm => vm.SubTotal);
 			set.Bind(GenerositySlider).To(vm => vm.Tip);
 			set.Bind(BillButton).To(vm => vm.GoToBillCommand);
+            set.Bind(LogoutButton).To(vm => vm.BackCommand);
+
 			set.Apply();
 		}
 	}

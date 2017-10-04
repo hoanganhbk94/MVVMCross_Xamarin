@@ -103,5 +103,13 @@ namespace HelloWorld
             Mvx.Trace("Result return: " + result);
 			//Do something with the result MyReturnObject that you get back
 		}
+
+        public MvxCommand LogOutCommand
+        {
+            get
+            {
+                return new MvxCommand(() => Close(this));
+            }
+        }
 	}
 }

@@ -13,6 +13,7 @@
             <connections>
                 <outlet property="BillButton" destination="ak6-OF-dvi" id="WGn-L3-hz7"/>
                 <outlet property="GenerositySlider" destination="Mah-H0-rFG" id="Cd0-lA-sv6"/>
+                <outlet property="LogoutButton" destination="uQJ-JJ-Um3" id="Ve6-3z-alg"/>
                 <outlet property="SubTotalTextField" destination="7qT-pA-EqI" id="CvE-fZ-L4A"/>
                 <outlet property="TipLabel" destination="zBc-mp-rk7" id="AW5-0j-zRz"/>
                 <outlet property="view" destination="2" id="RRd-Eg-VrN"/>
@@ -60,11 +61,23 @@
                     <rect key="frame" x="172" y="324" width="32" height="30"/>
                     <state key="normal" title="Next"/>
                 </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uQJ-JJ-Um3">
+                    <rect key="frame" x="0.0" y="627" width="375" height="40"/>
+                    <color key="backgroundColor" red="0.4232287837" green="0.4642434513" blue="0.75185068160000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="bV0-NT-oHV"/>
+                    </constraints>
+                    <state key="normal" title="LOG OUT">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
+                <constraint firstItem="uQJ-JJ-Um3" firstAttribute="leading" secondItem="2" secondAttribute="leading" id="0gF-KV-5ux"/>
                 <constraint firstItem="J3u-gR-Fp7" firstAttribute="leading" secondItem="2" secondAttribute="leading" constant="10" id="1Ph-oE-IIi"/>
                 <constraint firstItem="Mah-H0-rFG" firstAttribute="top" secondItem="J3u-gR-Fp7" secondAttribute="bottom" constant="20" id="99A-DZ-bB9"/>
+                <constraint firstAttribute="bottom" secondItem="uQJ-JJ-Um3" secondAttribute="bottom" id="BBG-Yo-k92"/>
                 <constraint firstAttribute="trailing" secondItem="Mah-H0-rFG" secondAttribute="trailing" constant="10" id="GoU-oD-1EP"/>
                 <constraint firstItem="Mah-H0-rFG" firstAttribute="leading" secondItem="2" secondAttribute="leading" constant="10" id="Hck-co-Kqa"/>
                 <constraint firstItem="7qT-pA-EqI" firstAttribute="leading" secondItem="2" secondAttribute="leading" constant="10" id="J6v-0d-LPC"/>
@@ -79,6 +92,7 @@
                 <constraint firstItem="zBc-mp-rk7" firstAttribute="centerX" secondItem="2" secondAttribute="centerX" id="ldg-RM-oar"/>
                 <constraint firstAttribute="trailing" secondItem="7qT-pA-EqI" secondAttribute="trailing" constant="10" id="p2c-wr-Np5"/>
                 <constraint firstItem="C85-qM-qRY" firstAttribute="leading" secondItem="2" secondAttribute="leading" constant="10" id="sIo-w0-SgE"/>
+                <constraint firstAttribute="trailing" secondItem="uQJ-JJ-Um3" secondAttribute="trailing" id="xUY-n4-Kfk"/>
             </constraints>
             <point key="canvasLocation" x="25.5" y="52.5"/>
         </view>

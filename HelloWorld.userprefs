@@ -1,7 +1,18 @@
 ﻿<Properties StartupConfiguration="{27707106-A9E4-4F38-A558-CAA3A95E6B36}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="iOS/Views/LoginView.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="HelloWorld/ViewModels/TipViewModel.cs">
     <Files>
-      <File FileName="iOS/Views/LoginView.cs" Line="44" Column="13" />
+      <File FileName="iOS/Views/LoginView.cs" Line="46" Column="10" />
+      <File FileName="iOS/Services/ProgressHUD.cs" Line="17" Column="10" />
+      <File FileName="iOS/DataSource/UserTableViewDataSource.cs" Line="43" Column="1" />
+      <File FileName="HelloWorld/AppStart.cs" Line="23" Column="1" />
+      <File FileName="iOS/Views/BaseView.cs" Line="28" Column="4" />
+      <File FileName="iOS/Views/TipView.cs" Line="19" Column="44" />
+      <File FileName="HelloWorld/ViewModels/TipViewModel.cs" Line="83" Column="43" />
+      <File FileName="HelloWorld/ViewModels/BillViewModel.cs" Line="102" Column="10" />
+      <File FileName="HelloWorld/Interfaces/Services/IDialogService.cs" Line="8" Column="30" />
+      <File FileName="HelloWorld/ViewModels/BaseViewModel.cs" Line="78" Column="14" />
+      <File FileName="HelloWorld/ViewModels/LoginViewModel.cs" Line="29" Column="14" />
+      <File FileName="iOS/Views/TipView.designer.cs" Line="38" Column="26" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />

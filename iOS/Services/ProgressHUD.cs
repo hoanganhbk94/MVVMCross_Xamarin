@@ -7,8 +7,8 @@ namespace HelloWorld.iOS.Services
     public class ProgressHUD
     {
         private MTMBProgressHUD _progress;
-        private UIView _parent;
-        private string _message;
+        private readonly UIView _parent;
+        private readonly string _message;
 
         public ProgressHUD(UIView parent, string message)
         {
