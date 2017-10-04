@@ -45,16 +45,28 @@ namespace HelloWorld.ViewModels
             {
                 return new MvxCommand(() =>
                 {
-                    if (_userService.LoginWithUserName(UserName, Password))
+                    try
                     {
-                        NavigationService.Navigate<TipViewModel>();
+                        IsBusy = true;
+						if (_userService.LoginWithUserName(UserName, Password))
+						{
+							NavigationService.Navigate<TipViewModel>();
+						}
+						else
+						{
+							string[] arrTexts = { "OK" };
+							DialogService.ShowAlertAsync("Warning",
+														"Username and password is invalid",
+														 arrTexts);
+						}
                     }
-                    else
+                    catch (Exception ex)
                     {
-                        string[] arrTexts = { "OK" };
-                        DialogService.ShowAlertAsync("Warning",
-                                                    "Username and password isn't valid",
-                                                     arrTexts);
+                        Mvx.Trace(ex.ToString());
+                    }
+                    finally
+                    {
+                        IsBusy = false;   
                     }
                 });
             }

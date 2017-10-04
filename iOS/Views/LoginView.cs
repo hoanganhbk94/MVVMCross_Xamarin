@@ -1,4 +1,5 @@
 ﻿using System;
+using HelloWorld.iOS.Services;
 using HelloWorld.ViewModels;
 using MvvmCross.Binding.BindingContext;
 using UIKit;
@@ -7,6 +8,8 @@ namespace HelloWorld.iOS.Views
 {
     public partial class LoginView : BaseView<LoginViewModel>
     {
+        private ProgressHUD _progress;
+
         public LoginView() : base("LoginView", null)
         {
         }
@@ -38,6 +41,8 @@ namespace HelloWorld.iOS.Views
 				((UITextField)textField).ResignFirstResponder();
 				return true;
 			};
+
+            _progress = new ProgressHUD(View);
         }
 
         public override void CreateBindings()
@@ -48,6 +53,7 @@ namespace HelloWorld.iOS.Views
             set.Bind(UserNameTextField).To(vm => vm.UserName);
             set.Bind(PasswordTextField).To(vm => vm.Password);
             set.Bind(LoginButton).To(vm => vm.LoginWithNormalUserCommand);
+            set.Bind(_progress).For(v => v.Visible).To(vm => vm.IsBusy);
 
             set.Apply();
         }

@@ -6,6 +6,12 @@ Function=xamarin_timezone_get_data
 	/Users/anh/Desktop/github/Xamarin/MVVMCross_Xamarin/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone9.1-10.3/mtouch-cache/Link/mscorlib.dll
 Function=xamarin_log
 	/Users/anh/Desktop/github/Xamarin/MVVMCross_Xamarin/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone9.1-10.3/mtouch-cache/Link/mscorlib.dll
+ObjectiveCClass=OBJC_CLASS_$_MBProgressHUD
+	/Users/anh/Desktop/github/Xamarin/MVVMCross_Xamarin/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone9.1-10.3/mtouch-cache/Link/MBProgressHUD.dll
+ObjectiveCClass=OBJC_CLASS_$_MBRoundProgressView
+	/Users/anh/Desktop/github/Xamarin/MVVMCross_Xamarin/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone9.1-10.3/mtouch-cache/Link/MBProgressHUD.dll
+ObjectiveCClass=OBJC_CLASS_$_MBBarProgressView
+	/Users/anh/Desktop/github/Xamarin/MVVMCross_Xamarin/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone9.1-10.3/mtouch-cache/Link/MBProgressHUD.dll
 Function=mono_pmip
 Function=xamarin_dyn_objc_msgSend
 Function=xamarin_dyn_objc_msgSendSuper

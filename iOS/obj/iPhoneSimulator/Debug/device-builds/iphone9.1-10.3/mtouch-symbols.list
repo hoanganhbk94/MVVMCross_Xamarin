@@ -2,6 +2,9 @@ _xamarin_get_block_descriptor
 _UIApplicationMain
 _xamarin_timezone_get_data
 _xamarin_log
+_OBJC_CLASS_$_MBProgressHUD
+_OBJC_CLASS_$_MBRoundProgressView
+_OBJC_CLASS_$_MBBarProgressView
 _mono_pmip
 _xamarin_dyn_objc_msgSend
 _xamarin_dyn_objc_msgSendSuper

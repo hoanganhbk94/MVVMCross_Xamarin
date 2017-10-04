@@ -23,6 +23,8 @@
 	-r \
 	/Users/anh/Desktop/github/Xamarin/MVVMCross_Xamarin/HelloWorld/bin/Debug/HelloWorld.dll \
 	-r \
+	/Users/anh/Desktop/github/Xamarin/MVVMCross_Xamarin/packages/mbprogresshud.0.9.2.0/lib/Xamarin.iOS/MBProgressHUD.dll \
+	-r \
 	/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/Xamarin.iOS/mscorlib.dll \
 	-r \
 	/Users/anh/Desktop/github/Xamarin/MVVMCross_Xamarin/packages/MvvmCross.Binding.5.2.0/lib/Xamarin.iOS10/MvvmCross.Binding.dll \
@@ -330,6 +332,8 @@
 	/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/Xamarin.iOS/Facades/System.Xml.Xsl.Primitives.dll \
 	-r \
 	/Users/anh/Desktop/github/Xamarin/MVVMCross_Xamarin/HelloWorld/bin/Debug/HelloWorld.dll \
+	-r \
+	/Users/anh/Desktop/github/Xamarin/MVVMCross_Xamarin/packages/mbprogresshud.0.9.2.0/lib/Xamarin.iOS/MBProgressHUD.dll \
 	-r \
 	/Users/anh/Desktop/github/Xamarin/MVVMCross_Xamarin/packages/MvvmCross.Binding.5.2.0/lib/Xamarin.iOS10/MvvmCross.Binding.dll \
 	-r \

@@ -32,4 +32,5 @@
 /Users/anh/Desktop/github/Xamarin/MVVMCross_Xamarin/HelloWorld/bin/Debug/HelloWorld.dll
 /Users/anh/Desktop/github/Xamarin/MVVMCross_Xamarin/packages/MvvmCross.Plugin.WebBrowser.5.2.0/lib/Xamarin.iOS10/MvvmCross.Plugins.WebBrowser.dll
 /Users/anh/Desktop/github/Xamarin/MVVMCross_Xamarin/packages/MvvmCross.Plugin.Messenger.5.2.0/lib/Xamarin.iOS10/MvvmCross.Plugins.Messenger.dll
+/Users/anh/Desktop/github/Xamarin/MVVMCross_Xamarin/packages/mbprogresshud.0.9.2.0/lib/Xamarin.iOS/MBProgressHUD.dll
 /Users/anh/Desktop/github/Xamarin/MVVMCross_Xamarin/packages/MvvmCross.Plugin.WebBrowser.5.2.0/lib/Xamarin.iOS10/MvvmCross.Plugins.WebBrowser.iOS.dll

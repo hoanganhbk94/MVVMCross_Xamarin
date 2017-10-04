@@ -97,3 +97,4 @@
 /Users/anh/Desktop/github/Xamarin/MVVMCross_Xamarin/iOS/obj/iPhoneSimulator/Debug/HelloWorld.iOS.csproj.CoreCompileInputs.cache
 /Users/anh/Desktop/github/Xamarin/MVVMCross_Xamarin/iOS/obj/iPhoneSimulator/Debug/HelloWorld.iOS.exe
 /Users/anh/Desktop/github/Xamarin/MVVMCross_Xamarin/iOS/obj/iPhoneSimulator/Debug/HelloWorld.iOS.pdb
+/Users/anh/Desktop/github/Xamarin/MVVMCross_Xamarin/iOS/bin/iPhoneSimulator/Debug/MBProgressHUD.dll

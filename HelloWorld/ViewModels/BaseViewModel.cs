@@ -13,6 +13,18 @@ namespace HelloWorld
         protected readonly IMvxNavigationService NavigationService;
         protected readonly IDialogService DialogService;
 
+        private bool _isBusy;
+
+        public bool IsBusy
+        {
+            get { return _isBusy; }
+            set
+            {
+                _isBusy = value;
+                RaisePropertyChanged(() => IsBusy);
+            }
+        }
+
         public BaseViewModel(IMvxNavigationService navigationService)
 		{
             this.NavigationService = navigationService;
